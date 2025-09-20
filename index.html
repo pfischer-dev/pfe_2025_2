@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End</title>
+</head>
+<body>
+    <h1>Front-End - 19/09/25</h1>
+    <div id="saida"></div>
 
+    <script>
+        let calc;
+        let n1 = parseFloat(prompt("Digite o primeiro número: "))
+        let n2 = parseFloat(prompt("Digite o segundo número: "))
+        calc = n1 + n2
+        let saida = document.getElementById("saida")
+        saida.innerHTML = `<br>A soma de ${n1} e ${n2} é ${calc}`
+        saida.innerHTML += `<br>A subtração entre ${n1} e ${n2} é ${n1-n2}`
+        saida.innerHTML += `<br>A multiplicação entre ${n1} e ${n2} é ${n1*n2}`
+        saida.innerHTML += `<br>A divisão entre ${n1} e ${n2} é ${n1/n2}` 
+        saida.innerHTML += `<br>O resto da divisão entre ${n1} e ${n2} é ${n1%n2}`
+        saida.innerHTML += `<br>A exponenciação entre ${n1} e ${n2} é ${n1**n2}`
+    </script>
+</body>
+</html>
